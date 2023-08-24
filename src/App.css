@@ -1,38 +1,139 @@
-.App {
-  text-align: center;
+
+  @import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&family=Merriweather:ital@1&family=Nunito:wght@500&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+body{
+    background-color: black;
+    color: white;
+    overflow: hidden;
+    font-family: Poppins;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1{
+    text-align:center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.todo-wrapper{
+    background-color:#353434;
+    width:fit-content;
+    padding: 2%;
+    margin-left:auto;
+    margin-right:auto;
+    /* margin-top:3%; */
+    max-height:80vh;
+    overflow-y:auto;
+    box-shadow:0px 3px 10px white;
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.todo-input{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    border-bottom:1px solid gray;
+    padding-bottom:25px;
+    margin-bottom:25px;
 }
 
-.App-link {
-  color: #61dafb;
+.todo-input-item input{
+    display:flex;
+    flex-direction:column;
+    padding: 8px;
+    width: 42vw;
+    height:25px;
+    border-radius:8px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.primaryBtn{
+    padding: 6px;
+    margin-left: 7px;
+    margin-top: 10px;
+    width: 550px;
+    background-color: green;
+    color:white;
+    box-shadow:0px 0px 2px white;
+    cursor: pointer;
+    border-radius:8px;
+}
+
+.secondaryBtn{
+    background-color:rgb(71,71,71);
+    padding: 6px;
+    box-shadow:0px 0px 2px white;
+   
+    margin-bottom: 15px;
+    color:white;
+    cursor: pointer;
+    border-radius:0px;
+    border:none;
+   
+}
+
+.active{
+    background-color: green;
+}
+
+.todo-list{
+    display: flex;
+    flex-direction:column;
+
+}
+
+.todo-list-item{
+    background-color: #414040;
+    box-shadow:0px 0px 2px white;
+    display: flex;
+    justify-content:space-between;
+    padding-left: 15px;
+    /* padding-bottom: 10px;
+    padding-top: 10px; */
+    margin-bottom: 10px;
+    margin-top: 5px;
+
+}
+
+.icon{
+    padding-right: 20px;
+    padding-top: 27px;
+    font-size:22px;
+    cursor: pointer;
+}
+
+#check{
+    color:green;
+}
+#check:hover{
+    color:lime;
+    
+}
+#edit{
+    /* color:skyblue */
+}
+#edit:hover{
+    color:aqua;
+}
+#delete{
+    /* color:#d11a2a; */
+}
+#delete:hover{
+    color:red;
+}
+
+.mid-section{
+    display:flex;
+    justify-content:space-between;
+}
+.clearBtn{
+    
+    padding: 8px;
+    box-shadow:0px 0px 2px white;
+    background-color:rgb(71,71,71);
+    margin-bottom: 15px;
+    color:white;
+    cursor: pointer;
+    border-radius:0px;
+    border:none;
+    
 }
